@@ -58,4 +58,18 @@ return [
         'rql'   => 'limit(a,b)',
         'valid' => false,
     ],
+
+    'operator names in sort 1' => [
+        'rql'   => 'sort(+eq1,-ne1)',
+        'valid' => true,
+    ],
+    'operator names in sort 2' => [
+        'rql'   => 'sort(+eq,-ne)',
+        'valid' => false,
+    ],
+
+    'operator names as strings' => [
+        'rql'   => 'eq(id,gt)',
+        'valid' => false,
+    ],
 ];
