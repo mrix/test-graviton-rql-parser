@@ -1,6 +1,6 @@
 {
     "require": {
-        "graviton/php-rql-parser": "v2.0.0-alpha5",
+        "graviton/php-rql-parser": "v2.0.0-alpha6",
         "doctrine/common": "*",
         "symfony/var-dumper": "*",
         "symfony/console": "~2.7"
