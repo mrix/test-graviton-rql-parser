@@ -3,10 +3,12 @@ use Symfony\Component\Console\Application;
 
 require(__DIR__ . '/vendor/autoload.php');
 require(__DIR__ . '/commands/XiagTestCommand.php');
+require(__DIR__ . '/commands/XiagPrintCommand.php');
 
 error_reporting(0);
 ini_set('display_errors', 0);
 
 $application = new Application();
 $application->add(new XiagTestCommand());
+$application->add(new XiagPrintCommand());
 $application->run();
